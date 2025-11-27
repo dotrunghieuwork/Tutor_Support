@@ -99,6 +99,24 @@ async function saveChanges() {
     const isOnline = document.getElementById('onlineSwitch').checked;
     const roomOrLink = document.getElementById('roomInput').value;
 
+    // Validation
+    if (!date) {
+        alert("Vui lòng nhập ngày.");
+        return;
+    }
+    if (!hour || isNaN(hour) || hour < 0 || hour > 23) {
+        alert("Giờ không hợp lệ (0-23).");
+        return;
+    }
+    if (!minute || isNaN(minute) || minute < 0 || minute > 59) {
+        alert("Phút không hợp lệ (0-59).");
+        return;
+    }
+    if (!roomOrLink) {
+        alert(isOnline ? "Vui lòng nhập link tham gia." : "Vui lòng nhập phòng học.");
+        return;
+    }
+
     const payload = {
         id: currentSessionId,
         date: date,
