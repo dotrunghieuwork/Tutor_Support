@@ -10,20 +10,31 @@
 </head>
 <body class="bg-light">
 
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="card p-4 shadow" style="width: 400px;">
-            <h3 class="text-center mb-3">Đăng Nhập</h3>
-            <div class="mb-3">
-                <input type="text" class="form-control" id="username" placeholder="Tên đăng nhập">
-            </div>
-            <div class="mb-3">
-                <input type="password" class="form-control" id="password" placeholder="Mật khẩu">
-            </div>
-            <button id="btn-login" class="btn btn-primary w-100">Vào hệ thống</button>
-        </div>
+    <div style="position: relative; width: 1440px; margin: 0 auto;">
+        
+        <img src="assets/images/bg-login.png" style="width: 100%;">
+
+
+        <button id="admin" 
+                style="position: absolute; 
+                       top: 550px; 
+                       left: 950px; 
+                       width: 400px; height: 45px;
+                       opacity: 0; /* Tàng hình luôn */
+                       cursor: pointer;">
+        </button>
+<button id="hcmut-account" 
+        style="position: absolute; 
+               top: 495px;      
+               left: 950px;    
+               width: 400px;    
+               height: 50px;
+               opacity: 0;    /* Để 0.5 cho dễ nhìn */
+               background-color: blue; /* Màu xanh để phân biệt */
+               cursor: pointer;">
+</button>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
