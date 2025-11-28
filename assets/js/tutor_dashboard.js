@@ -104,6 +104,26 @@ async function saveChanges() {
         alert("Vui lòng nhập ngày.");
         return;
     }
+    
+    // Date Format Validation (DD/MM/YYYY)
+    const dateRegex = /^(\d{1,2})\/(\d{1,2})\/(\d{4})$/;
+    if (!dateRegex.test(date)) {
+        alert("Định dạng ngày không hợp lệ (DD/MM/YYYY).");
+        return;
+    }
+
+    // Date Logic Validation
+    const [_, day, month, year] = date.match(dateRegex);
+    const dateObj = new Date(`${year}-${month}-${day}`);
+    if (
+        dateObj.getFullYear() != year ||
+        dateObj.getMonth() + 1 != month ||
+        dateObj.getDate() != day
+    ) {
+        alert("Ngày không tồn tại.");
+        return;
+    }
+
     if (!hour || isNaN(hour) || hour < 0 || hour > 23) {
         alert("Giờ không hợp lệ (0-23).");
         return;
