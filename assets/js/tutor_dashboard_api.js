@@ -11,10 +11,10 @@ const ApiService = {
         { id: 103, subject: "CO2011 - Mô hình hóa toán học", date: "08/12/2025", time: "17:00", isOnline: true, location: "https://zoom.us/j/123456789" },
         { id: 104, subject: "CO2013 - Hệ cơ sở dữ liệu", date: "09/12/2025", time: "18:00", isOnline: false, location: "H6-210" },
         { id: 105, subject: "CO3093 - Mạng máy tính", date: "10/12/2025", time: "18:00", isOnline: false, location: "H3-301" },
-        { id: 106, subject: "CO2003 - Cấu trúc DL và GT", date: "10/12/2025", time: "18:00", isOnline: false, location: "B4-301" },
-        { id: 107, subject: "PH1003 - Vật lý 1", date: "11/12/2025", time: "07:00", isOnline: false, location: "C5-201" },
+        { id: 106, subject: "CO2003 - Cấu trúc DL và GT", date: "10/12/2025", time: "18:00", isOnline: false, location: "H4-301" },
+        { id: 107, subject: "PH1003 - Vật lý 1", date: "11/12/2025", time: "07:00", isOnline: false, location: "H5-201" },
         { id: 108, subject: "PH1005 - Vật lý 2", date: "11/12/2025", time: "09:30", isOnline: true, location: "https://meet.google.com/phy-sics-two" },
-        { id: 109, subject: "MT1007 - Đại số tuyến tính", date: "12/12/2025", time: "13:00", isOnline: false, location: "B1-304" },
+        { id: 109, subject: "MT1007 - Đại số tuyến tính", date: "12/12/2025", time: "13:00", isOnline: false, location: "H1-304" },
         { id: 110, subject: "SP1003 - Pháp luật đại cương", date: "12/12/2025", time: "15:30", isOnline: true, location: "https://teams.microsoft.com/l/meetup-join/..." }
     ],
 
